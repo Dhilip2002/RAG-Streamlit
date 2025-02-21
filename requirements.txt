@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain-chroma
+langchain-community
+sentence-transformers
+pymupdf
+unstructured
+requests
+chromadb
