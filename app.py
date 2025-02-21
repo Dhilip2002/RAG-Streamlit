@@ -8,6 +8,9 @@ from langchain_community.document_loaders import PyMuPDFLoader, UnstructuredExce
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from pathlib import Path
+import sys
+import pysqlite3
+sys.modules["sqlite3"] = pysqlite3
 
 warnings.filterwarnings("ignore", message="Warning: Empty content on page")
 
