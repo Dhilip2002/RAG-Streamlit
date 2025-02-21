@@ -1,3 +1,7 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import os
 import tempfile
 import warnings
@@ -8,7 +12,7 @@ from langchain_community.document_loaders import PyMuPDFLoader, UnstructuredExce
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import Chroma  # Correct import for ChromaDB
 from pathlib import Path
-# import chromadb  # Ensure chromadb is installed
+import chromadb  # Ensure chromadb is installed
 
 warnings.filterwarnings("ignore", message="Warning: Empty content on page")
 
