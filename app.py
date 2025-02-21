@@ -19,7 +19,7 @@ warnings.filterwarnings("ignore", message="Warning: Empty content on page")
 # Constants
 COLLECTION_NAME = "cv_collection"
 PERSIST_DIRECTORY = "./chroma_db"  # Use relative path for Streamlit Cloud
-MODEL_NAME = "lmstudio-community/Phi-3.1-mini-128k-instruct-GGUF"
+MODEL_NAME = "microsoft/Phi-3.5-mini-instruct"
 
 def load_model():
     """Load the Hugging Face model and tokenizer."""
