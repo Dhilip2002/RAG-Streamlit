@@ -3,6 +3,7 @@ langchain
 langchain-chroma
 langchain-community
 langchain-huggingface
+transformers
 sentence-transformers
 pymupdf
 unstructured
