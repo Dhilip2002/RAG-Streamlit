@@ -8,4 +8,4 @@ pymupdf
 unstructured
 requests
 chromadb
-pysqlite3
+pysqlite3-binary
